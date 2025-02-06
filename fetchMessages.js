@@ -2,7 +2,11 @@ const express = require('express');
 const puppeteer = require('puppeteer');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;  // Use Heroku's assigned port or fallback to 3000
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
+});
+
 
 app.get('/fetch-messages', async (req, res) => {
   const { email, password } = req.query;
