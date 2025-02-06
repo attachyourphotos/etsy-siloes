@@ -1,14 +1,17 @@
 {
-  "name": "etsy-message-fetcher",
+  "name": "etsy-message-bot",
   "version": "1.0.0",
-  "description": "Fetch Etsy messages using Puppeteer",
-  "main": "fetchMessages.js",
+  "description": "Automated Etsy message manager using Puppeteer and OpenAI GPT-3",
+  "main": "server.js",
   "scripts": {
-    "start": "node fetchMessages.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "puppeteer": "^19.0.0",
-    "cors": "^2.8.5"
+    "express": "^4.17.1",
+    "openai": "^3.0.0"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
