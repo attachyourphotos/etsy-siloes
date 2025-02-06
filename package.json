@@ -1,0 +1,14 @@
+{
+  "name": "etsy-message-fetcher",
+  "version": "1.0.0",
+  "description": "Fetch Etsy messages using Puppeteer",
+  "main": "fetchMessages.js",
+  "scripts": {
+    "start": "node fetchMessages.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^19.0.0",
+    "cors": "^2.8.5"
+  }
+}
